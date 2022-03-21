@@ -1,0 +1,119 @@
+/* Universal Styles */
+html {
+  font-size: 16px;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.5rem;
+}
+.justify {
+  text-align: justify;
+}
+header, main, footer {
+  margin: 2.5rem;
+}
+
+/* HEADER */
+nav {
+  border: 0.3rem solid crimson;
+  border-radius: 0.5rem;
+  background-color: rgb(252, 219, 215);
+  padding: 0.5rem;
+}
+nav ul li{
+  display: flex;
+  font-size: 1.5rem;
+}
+nav li a {
+  color: crimson;
+  text-decoration: underline;
+}
+nav li a:hover {
+  text-decoration: none;
+}
+#banner {
+  background-color: crimson;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 2.5rem;
+}
+#banner img {
+  border-radius: 50%;
+  padding: 1rem;
+}
+h1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MAIN */
+h2 {
+  margin: 2.5rem 0;
+}
+.project-box {
+  border: 1px solid black;
+}
+#skills ul li {
+  list-style: none;
+}
+/*.container-flex {
+  display: flex;
+}
+
+p.project-description {
+  text-align: justify;
+}
+
+.project-images {
+  width: 300px;
+  height: 250px;
+}
+
+button {
+  background-color: antiquewhite;
+  border: 1px solid crimson;
+  border-radius: 5px;
+  font-size: 18px;
+  width: 125px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+button a {
+  text-decoration: none;
+}
+
+ FOOTER 
+.icons {
+  width: 50px;
+  height: 50px;
+}
+
+footer section {
+  text-align: center;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.green {
+  background-color: green;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.purple {
+  background-color: purple;
+}
