@@ -1,15 +1,23 @@
+/* Universal Styles*/
 h2, h3, form {
   margin: 2.5rem;
 }
 
+/* Main */
+main {
+  position: relative;
+  top: 2.5rem;
+}
+
 main section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 .icons {
   width: 5rem;
   height: auto;
+  margin: 0 auto;
+  padding: 0.5rem;
 }
 form {
   border: 0.25rem solid crimson;

@@ -9,14 +9,12 @@
 
 ## Features
 ## How to use
+Porfolio live website: https://kanyisa-ntombini.github.io/portfolio/
 
 ## Technologies
 - HTML
 - CSS
 - JavaScript
-
-## Collaborators
-## Licence
 
 resume: https://drive.google.com/drive/folders/1KnLGu1iN4gNZt-0eazdZxzISDsGzFHWn?usp=sharing
 
