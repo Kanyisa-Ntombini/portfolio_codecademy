@@ -8,18 +8,13 @@ main {
   position: relative;
   top: 2.5rem;
 }
-
-main section {
-  display: flex;
-  justify-content: space-evenly;
-}
-.icons {
-  width: 5rem;
-  height: auto;
-  margin: 0 auto;
-  padding: 0.5rem;
+figure {
+  width: 50%;
 }
 form {
   border: 0.25rem solid crimson;
   padding: 1rem;
+}
+.blue {
+  background-color: lightblue;
 }

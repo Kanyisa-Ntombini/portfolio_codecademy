@@ -11,17 +11,26 @@
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#about-me">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="./resources/tabs/contact.html">Contact Me</a>
+    <nav class="mobile">
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="./resources/tabs/contact.html">Contact Me</a></li>
+      </ul>
+    </nav>
+    <nav class="desktop">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="./resources/tabs/contact.html">Contact Me</a></li>
     </nav>
     
     <section id="banner">
-      <img src="./resources/images/professional-pic.jpg" alt="">
-      <h1>Kanyisa Ntombini</h1>
+      <div id="image-banner-container">
+        <img src="./resources/images/professional-pic.jpg" alt="">
+      </div>
+      <h1 class="center">Kanyisa Ntombini</h1>
     </section>
   </header>
 
@@ -79,14 +88,14 @@
         <li>Python</li>
       </ul>
 
-      <!--
       <h3>Frameworks</h3>
       <ul>
+        <li>Mocha</li> <!--
         <li>Node Js</li>
         <li>Electron Js</li>
         <li>React</li>
-        <li>Redux</li>
-      </ul> -->
+        <li>Redux</li> -->
+      </ul>
 
       <h3>Other Skills and Interests</h3>
       <ul>
