@@ -1,15 +1,14 @@
 /* Universal Styles*/
-h2, h3, form {
-  margin: 2.5rem;
-}
 
 /* Main */
-main {
-  position: relative;
-  top: 2.5rem;
+.contact-details {
+  display: grid;
+  grid-template-columns: 3rem 2rem 7rem;
+  width: 15rem;
+  margin: 1rem auto;
 }
-figure {
-  width: 50%;
+.contact-details p {
+  align-self: center;
 }
 form {
   border: 0.25rem solid crimson;
@@ -17,4 +16,7 @@ form {
 }
 .blue {
   background-color: lightblue;
+}
+.green {
+  background-color: lightgreen;
 }

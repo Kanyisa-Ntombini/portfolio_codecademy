@@ -1,11 +1,62 @@
-/* Universal Styles */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+/* ROOT FONT STYLES */
 
 * {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
   box-sizing: border-box;
-  margin: 0;
-  margin: 0;
 }
+
+/* TYPOGRAPHY */
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+/* POSITIONING */
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+/* NEW */
+
 main, footer {
   margin: 0 1rem;
 }
@@ -24,9 +75,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.center {
-  text-align: center;
-}
 .mobile {
   display: block;
 }
@@ -43,6 +91,7 @@ img {
 }
 
 /* HEADER */
+
 nav {
   position: fixed;
   top: 0;
@@ -77,6 +126,18 @@ nav a:hover {
   margin: 0 auto;
   padding: 1rem 0;
 }
+/*@media only screen and (min-width: 30rem) {
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav a:hover {
+    text-decoration: none;
+  }
+}*/
 
 /* MAIN */
 main {
