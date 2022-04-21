@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Kanyisa Ntombini</title>
-  <link rel="stylesheet" href="./resources/css/reset.css">
   <link rel="stylesheet" href="./resources/css/index.css">
   <script src="./resources/js/script.js" async></script>
 </head>
@@ -17,17 +16,16 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="./resources/tabs/contact.html">Contact Me</a></li>
       </ul>
-
-      <div id="banner">
-        <div id="image-banner-container">
-          <a href="#"><img src="./resources/images/professional-pic.jpg" alt=""></a>
-        </div>
-        <h1 class="center">Kanyisa Ntombini</h1>
-      </div>
     </nav>
+    <div id="picture-and-heading" class="mobile">
+      <div id="image-container">
+        <a href="#"><img src="./resources/images/professional-pic.jpg" alt=""></a>
+      </div>
+      <h1 class="center">Kanyisa Ntombini</h1>
+    </div>
 
-    <nav class="desktop" id="desktop-banner">
-      <h1>Kanyisa Ntombini</h1>
+    <nav class="desktop" id="desktop-nav">
+      <h1><a href="#">Kanyisa Ntombini</a></h1>
       <ul>
         <li><a href="#about-desktop">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -40,14 +38,13 @@
   <main>
     <!-- About me -->
     <section id="about-mobile" class="mobile">
-      <h2>Hello there!</h2>
+      <h2 class="center">Hello there!</h2>
       <p class="justify">
         I am an aspiring self-taught Full Stack Web Developer. My interests are in Javascript and Python. For the past few months, I have been learning about Front End development using HTML, CSS and JavaScript. I am also interested in building chatbots and Machine Learning. As a result, I have been learning Python. Please <a href="./resources/documents/Ntombini K CV 2022.pdf">click here</a> for my resume.
         <br><br>
-        I am partially sighted due to a condition called Keratoconus which led to me becoming a disability activist. Initially, I wanted to pursue a career in science and technology because I thought it was so cool. After high school, I started using screen readers and enlarging software. This enabled me to be able to use computers and cell phones. As a result, I would like to develop cheap accessible technology for disabled people from low-income communities.
+        I am partially sighted due to a condition called Keratoconus. This has led to me becoming a disability activist. I would like to build accessible websites so that all people are to use them despite their physical or mental condition.
         <br><br>  
-        When I am not coding or doing activism I love hiking, going to the beach and spending time 
-        with my friends and family. I am also an avid knitter!
+        When I am not coding I like taking nature walks, looking for the cosiest coffee shops in town or spending time with my friends and family. I am also an avid knitter!
       </p>
     </section>
 
@@ -57,10 +54,9 @@
         <p class="justify">
           I am an aspiring self-taught Full Stack Web Developer. My interests are in Javascript and Python. For the past few months, I have been learning about Front End development using HTML, CSS and JavaScript. I am also interested in building chatbots and Machine Learning. As a result, I have been learning Python. Please <a href="./resources/documents/Ntombini K CV 2022.pdf">click here</a> for my resume.
           <br><br>
-          I am partially sighted due to a condition called Keratoconus which led to me becoming a disability activist. Initially, I wanted to pursue a career in science and technology because I thought it was so cool. After high school, I started using screen readers and enlarging software. This enabled me to be able to use computers and cell phones. As a result, I would like to develop cheap accessible technology for disabled people from low-income communities.
+          I am partially sighted due to a condition called Keratoconus. This has led to me becoming a disability activist. I would like to build accessible websites so that all people are to use them despite their physical or mental condition.
           <br><br>  
-          When I am not coding or doing activism I love hiking, going to the beach and spending time 
-          with my friends and family. I am also an avid knitter!
+          When I am not coding I like taking nature walks, looking for the cosiest coffee shops in town or spending time with my friends and family. I am also an avid knitter!
         </p>
       </div>
       <div id="profile-pic">
@@ -73,35 +69,47 @@
       <h2>Projects</h2>
 
       <!-- Flex Box Business Website -->
-      <article class="project-box">
-        <h3>Flexbox Business Webpage</h3>
-        <p>Write about project</p>
-        <p class="project-description">Please <a href="https://kanyisa-ntombini.github.io/flexbox-business-site-starting/">click</a> here to view the web page <a href="https://github.com/Kanyisa-Ntombini/flexbox-business-site-starting">click here</a> for the repository</p>
-        <div>Some dropdown button</div>
-      </article>
+      <div>
+        <h3 id="flexboxBusiness">1. Flexbox Business Webpage</h3>
+        <div id="hideFlexboxBusiness" class="projectBox">
+          <img src="#" alt="A picture of the cozy corner cafe webpage">
+          <p>This is a webpage for an imaginary book and coffee shop. It was created with Flexbox and it is responsive. <br><br>
+          Please <a href="https://kanyisa-ntombini.github.io/flexbox-business-site-starting/" target="_blank">click</a> here to view the web page <a href="https://github.com/Kanyisa-Ntombini/flexbox-business-site-starting" target="_blank">click here</a> for the repository.
+          </p>
+          <button id="flexboxBtn">Close</button>
+        </div>
+      </div>
 
-      <!-- Mystery Organism-->
-      <article class="project-box">
-        <h3>Mystery Organism</h3>
-        <p>Write about project</p>
-        <p class="project-description">Please <a href="https://github.com/Kanyisa-Ntombini/mystery-organism-starter">click here</a> for the repository</p>
-        <div>Some dropdown button</div>
-      </article>
+      <!-- Mystery Organism -->
+      <div>
+        <h3 id="mysteryOrganism">2. Mystery Organism</h3>
+        <div id="hideMysteryOrganism" class="projectBox">
+          <img src="#" alt="A picture the mystery organism code organism">
+          <p>An object is generated that represents a mysterious organism called pAequeor. This object contains the organisms DNA code which contains 15 bases and a specimen number. It has number of functions such as a mutating function and a function that compares the DNA of two organisms.<br><br>
+            Please <a href="https://github.com/Kanyisa-Ntombini/mystery-organism-starter" target="_blank ">click here</a> for the repository
+          </p>
+          <button id="mysteryOrganismBtn">Close</button>
+        </div>
+      </div>
 
-      <!-- PYTHON PROJECT-->
-      <article class="project-box">
-        <h3>Coffee Chatbot</h3>
-        <p>Write about project</p>
-        <p class="project-description">Please <a href="https://github.com/Kanyisa-Ntombini/coffee-maker-bot">click here</a> for the repository</p>
-        <div>Some dropdown button</div>
-      </article>
+      <!-- PYTHON PROJECT -->
+      <div>
+        <h3 id="chatbot">3. Coffee Chatbot</h3>
+        <div id="hideChatbot" class="projectBox">
+          <img src="#" alt="A picture of the code">
+          <p>This allows a customer to order coffee using a chatbot <br><br>
+          Please <a href="https://github.com/Kanyisa-Ntombini/coffee-maker-bot">click here</a> for the repository
+          </p>
+          <button id="chatbotBtn">Close</button>
+        </div>
+      </div>
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
 
       <h3>Programming Languages</h3>
-      <ul>
+      <ul role="presentation">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
@@ -110,11 +118,7 @@
 
       <h3>Frameworks</h3>
       <ul>
-        <li>Mocha</li> <!--
-        <li>Node Js</li>
-        <li>Electron Js</li>
-        <li>React</li>
-        <li>Redux</li> -->
+        <li>Mocha</li> 
       </ul>
 
       <h3>Other Skills and Interests</h3>
@@ -128,7 +132,7 @@
   </main>
 
   <footer>
-    <section><p>&copy; 2021 Kanyisa Ntombini</p></section>
+    <p>&copy; 2021 Kanyisa Ntombini</p>
   </footer>
 </body>
 </html>

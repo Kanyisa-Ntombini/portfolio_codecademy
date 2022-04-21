@@ -1,3 +1,9 @@
+/* Adapted from SimpleGrid 
+  https://simplegrid.io/
+  Made by Zach Cole
+  Open source under the MIT License
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
 
 /* UNIVERSAL */
@@ -13,6 +19,7 @@ body {
   font-size: 100%;
 }
 
+
 /* ROOT FONT STYLES */
 
 * {
@@ -22,33 +29,7 @@ body {
   box-sizing: border-box;
 }
 
-/* TYPOGRAPHY */
-ul li {
-  list-style: inside;
-}
-
-.font-light {
-  font-weight: 300;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-heavy {
-  font-weight: 700;
-}
-
 /* POSITIONING */
-
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
 .center {
   text-align: center;
   margin-left: auto;
@@ -60,9 +41,8 @@ ul li {
 }
 
 /* NEW */
-
 main, footer {
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 p {
   font-weight: 300;
@@ -100,7 +80,6 @@ nav {
   top: 0;
   z-index: 5;
   width: 100%;
-  padding: 0.5rem 0;
   background-color: crimson;
 }
 .mobile ul {
@@ -113,66 +92,116 @@ nav ul li {
 nav a:hover {
   text-decoration: none;
 }
-#banner {
+
+/* Banner */
+#picture-and-heading {
   position: relative;
   top: 3.75rem;
-  background-color: crimson;
+  background-color: white;
 }
-#banner h1{
+#picture-and-heading h1{
   padding-bottom: 1rem;
 }
-#banner img {
+#picture-and-heading img {
   border-radius: 50%;
 }
-#image-banner-container{
+#image-container{
   width: 50%;
   margin: 0 auto;
   padding: 1rem 0;
 }
+h1 a {
+  text-decoration: none;
+}
+h1 a:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 30rem) {
-  #desktop-banner {
+  #desktop-nav {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-self: center;
+    grid-template-columns: 3fr 2fr;
+  }
+  #desktop-nav h1 {
+    margin: 1rem 0;
   }
   .desktop ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-self: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #profile-pic {
+    padding-top: 2rem;
+  }
+  #profile-pic img{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
   }
   #about-desktop {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    column-gap: 2rem;
   }
   #about-desktop p {
     font-size: 1rem;
   }
 }
 
-/* MAIN */
+/* === MAIN === */
 main {
   position: relative;
-  top: 5rem;
+  top: 2rem;
 }
+
+/* About */
 #about-me h2 {
   margin-bottom: 1rem;
 }
+
+/* Projects*/
 #projects {
   margin: 2rem 0;
 }
-.project-box {
-  border: 1px solid black;
-  padding: 1.5rem;
-  margin: 1rem 0;
+.projectBox {
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
+#projects h3 {
+  font-weight: 300;
+}
+#projects h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+#hideFlexboxBusiness, #hideMysteryOrganism, #hideChatbot {
+  display: none;
+}
+
+/* Skills */
 #skills h2, #skills h3 {
   margin: 1rem 0;
+}
+#skills li {
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 30rem) {
+  main {
+    position: relative;
+    top: 5rem;
+  }
 }
 
 /* FOOTER */
 footer {
   position: relative;
-  top: 5rem;
-  margin: 1rem 0;
+  top: 2rem;
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 30rem) {
+  footer {
+    position: relative;
+    top: 5rem;
+  }
 }

@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Kanyisa Ntombini</title>
-  <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/contact.css">
 </head>
@@ -13,25 +12,28 @@
   <header>
     <nav class="mobile">
       <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="./resources/tabs/contact.html">Contact Me</a></li>
+        <li><a href="../../index.html">Projects</a></li>
+        <li><a href="../../index.html">Skills</a></li>
+        <li><a href="#">Contact Me</a></li>
       </ul>
-    </nav>
-    <nav class="desktop">
-      <li><a href="#">Home</a></li>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="./resources/tabs/contact.html">Contact Me</a></li>
+
+      <div id="banner">
+        <div id="image-banner-container">
+          <a href="#"><img src="./resources/images/professional-pic.jpg" alt=""></a>
+        </div>
+        <h1><a href="../../index.html">Kanyisa Ntombini</a></h1>
+      </div>
     </nav>
 
-    <section id="banner">
-      <div id="image-banner-container">
-        <a href="../../index.html"><img src="../images/professional-pic.jpg" alt=""></a>
-      </div>
-      <h1 class="center">Kanyisa Ntombini</h1>
-    </section>
+    <nav class="desktop" id="desktop-banner">
+      <h1><a href="../../index.html">Kanyisa Ntombini</a></h1>
+      <ul>
+        <li><a href="../../index.html">About Me</a></li>
+        <li><a href="../../index.html">Projects</a></li>
+        <li><a href="../../index.html">Skills</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -57,32 +59,27 @@
         <div></div>
         <p>@Kanyisa-Ntombini</p>
       </div> 
-
-      <!-- 
-      <figure>
-        <img class="icons" src="../images/email.png" alt="">
-        <figcaption>kanyisa.ntombini@gmail.com</figcaption>
-      </figure>
-
-      <figure>
-        <a href="https://github.com/Kanyisa-Ntombini"><img class="icons" src="../images/github.png" alt=""></a>
-        <figcaption>@Kanyisa-Ntombini</figcaption>
-      </figure>
-
-      Linked in
-      <figure>
-        <a href="https://github.com/Kanyisa-Ntombini"><img class="icons" src="../images/linkedin.png" alt=""></a>
-        <figcaption>@Kanyisa-Ntombini</figcaption>
-      </figure> -->
     </section>
 
-    <h3 class="center">Alternatively please fill in this form</h3>
     <section id="contact-form">
-      <form action="">
-        <label for="">
-          Name:
-          <input type="text" name="" id="">
-        </label>
+      <form action="" method="POST">
+        <h3 class="center">Alternatively please fill in this form</h3>
+
+        <label for="name">Name: </label><br>
+        <input type="text" name="name" id="name" placeholder="Jane Doe" required>
+
+        <br><br>
+
+        <label for="email-address">Email Address: </label><br>
+        <input type="email" name="email-address" id="email-address" placeholder="jane@doe.com" required>
+
+        <br><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Dear Kanyisa..."></textarea>
+
+        <br><br>
+        <input type="submit" value="Send">
       </form>
     </section>
 

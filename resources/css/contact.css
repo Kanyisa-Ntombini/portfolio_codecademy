@@ -10,8 +10,11 @@
 .contact-details p {
   align-self: center;
 }
+#contact-form {
+  text-align: center;
+}
 form {
-  border: 0.25rem solid crimson;
+  border: 0.2rem solid crimson;
   padding: 1rem;
 }
 .blue {
