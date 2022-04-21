@@ -14,8 +14,10 @@
   text-align: center;
 }
 form {
-  border: 0.2rem solid crimson;
+  border: 0.1rem solid black;
   padding: 1rem;
+  width: 50%;
+  margin: 0 auto;
 }
 .blue {
   background-color: lightblue;
