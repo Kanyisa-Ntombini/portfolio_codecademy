@@ -47,3 +47,11 @@ chatbot.addEventListener('click', printProject);
 chatbotCloseBtn.addEventListener('click', closeProject);
 
 console.log(hideChatbot);
+
+/* Submit button */
+const submit = document.getElementById('submit');
+const contactForm = document.getElementById('contact-form');
+
+const submitMessage = () => contactForm.innerHTML = 'Thank you for your message!';
+
+submit.addEventListener('click', submitMessage);
