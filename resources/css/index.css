@@ -4,9 +4,7 @@
   Open source under the MIT License
 */
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
-
-/* UNIVERSAL */
+/* This resets the browsers default settings */
 
 html,
 body {
@@ -17,55 +15,40 @@ body {
   left: 0;
   top: 0;
   font-size: 100%;
-}
-
-
-/* ROOT FONT STYLES */
-
-* {
-  font-family: 'Lato', Helvetica, sans-serif;
-  color: #333447;
+  font-family: sans-serif;
   line-height: 1.5;
   box-sizing: border-box;
 }
 
-/* POSITIONING */
-.center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* This the beginning of MY styling */
 
-.justify {
-  text-align: justify;
-}
-
-/* NEW */
-main, footer {
-  margin: 0 2rem;
-}
 p {
-  font-weight: 300;
   font-size: 0.75rem;
 }
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
+
 h2 {
   font-size: 1.5rem;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.mobile {
+
+.mobile { /* I am doing a mobile first design so thats why the mobile display is on first*/
   display: block;
 }
+
 .desktop {
   display: none;
 }
-@media only screen and (min-width: 30rem) {
+
+@media only screen and (min-width: 30rem) { /* When the screen is 480px or more the mobile content is off and desktop content is on */
   .mobile {
     display: none;
   }
@@ -74,23 +57,52 @@ img {
   }
 }
 
-/* HEADER */
-nav {
-  position: fixed;
-  top: 0;
-  z-index: 5;
-  width: 100%;
-  background-color: crimson;
-}
+/* === HEADER === */
 .mobile ul {
   display: flex;
   justify-content: space-evenly;
 }
-nav ul li {
+nav { /* mobile and desktop */
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background-color: #74F5CD;
+}
+nav ul li { /* mobile and desktop */
   list-style: none;
 }
-nav a:hover {
+nav a:hover { /* mobile and desktop */
   text-decoration: none;
+}
+@media only screen and (min-width: 30rem) { /* desktop header only*/
+  .desktop-nav { /* I created a separate desktop-nav class to target the navigation. The desktop class is used in other places in the code such as the banner section for the mobile version*/
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+  .desktop-nav h1 {
+    margin: 0.5rem 0;
+  }
+  .desktop ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #profile-pic {
+    padding-top: 2rem;
+  }
+  #profile-pic img{
+    border: 0.1rem solid black;
+    border-radius: 1rem;
+  }
+  #about-desktop {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+  }
+  #about-desktop p {
+    font-size: 1rem;
+  }
 }
 
 /* Banner */
@@ -116,40 +128,16 @@ h1 a {
 h1 a:hover {
   text-decoration: underline;
 }
-@media only screen and (min-width: 30rem) {
-  #desktop-nav {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-  }
-  #desktop-nav h1 {
-    margin: 1rem 0;
-  }
-  .desktop ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  #profile-pic {
-    padding-top: 2rem;
-  }
-  #profile-pic img{
-    border: 0.1rem solid black;
-    border-radius: 1rem;
-  }
-  #about-desktop {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    column-gap: 2rem;
-  }
-  #about-desktop p {
-    font-size: 1rem;
-  }
-}
+
 
 /* === MAIN === */
 main {
   position: relative;
   top: 2rem;
+}
+
+main, footer {
+  margin: 0 2rem;
 }
 
 /* About */
@@ -196,7 +184,7 @@ main {
   }
 }
 
-/* FOOTER */
+/* === FOOTER === */
 footer {
   position: relative;
   top: 2rem;
